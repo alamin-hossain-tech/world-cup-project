@@ -33,6 +33,7 @@ html {
 }
 .btn:hover {
   color: #fff;
+  cursor: pointer;
 }
 .btn::before {
   background: #bd0303;
@@ -284,6 +285,7 @@ hr {
   .hero-content-left {
     width: 100%;
     padding: 30px;
+    padding-top: 70px;
   }
   .primary-header {
     font-size: 38px;
