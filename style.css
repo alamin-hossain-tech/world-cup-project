@@ -197,7 +197,7 @@ html {
   color: #bd0303;
 }
 hr {
-  margin: 130px auto;
+  margin: 70px auto;
   border: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -213,7 +213,7 @@ hr {
 }
 
 /* Responsive Media Queries */
-@media (max-width: 992px) {
+@media (min-width: 768) and (max-width: 992px) {
   .hero-content {
     padding: 0;
     align-items: center;
@@ -271,17 +271,20 @@ hr {
 
 /* ------Small Devices------- */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero-content {
     flex-direction: column;
     gap: 50px;
     text-align: center;
+    padding: 0;
+    margin: 0px 20px;
   }
   .hero-content-left {
     width: 100%;
+    padding-top: 30px;
   }
   .primary-header {
-    font-size: 48px;
+    font-size: 36px;
     line-height: normal;
   }
   .hero-content-right {
