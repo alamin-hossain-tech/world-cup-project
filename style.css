@@ -278,5 +278,8 @@ hr {
     justify-content: center;
     gap: 40px;
   }
+  footer {
+    display: none;
+  }
 }
 /* ------Medium Devices------- */
