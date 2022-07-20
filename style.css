@@ -276,8 +276,6 @@ hr {
     flex-direction: column;
     gap: 50px;
     text-align: center;
-    padding: 20px;
-    padding-bottom: 0px;
   }
   .hero-content-left {
     width: 100%;
