@@ -52,14 +52,13 @@ html {
 
 /* Hero Section Styles */
 .hero-section {
-  background-color: #000;
-  min-height: 600px;
-  border-radius: 30px;
   margin-top: 20px;
 }
 .hero-content {
   display: flex;
   padding: 30px 80px 0px 80px;
+  background-color: #000;
+  border-radius: 30px;
 }
 
 .hero-content-left {
@@ -214,14 +213,70 @@ hr {
 }
 
 /* Responsive Media Queries */
+@media (max-width: 992px) {
+  .hero-content {
+    padding: 0;
+    align-items: center;
+    margin: 0 50px;
+  }
+  .hero-content-left {
+    height: auto;
+    padding: 60px 10px;
+    padding-left: 70px;
+  }
+  .primary-header {
+    font-size: 36px;
+    line-height: normal;
+  }
+  .hero-content-right img {
+    width: 100%;
+    margin-bottom: -7px;
+  }
+  .hero-content-right {
+    align-self: end;
+  }
+  .featured-section {
+    margin: 70px auto;
+  }
+  .featured-flex {
+    flex-direction: column;
+    margin: 0 50px;
+  }
+  .featured-left {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+  }
+  .featured-left .btn {
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #e8e8e8;
+  }
+  .featured-left .btn:last-child {
+    border: 0;
+  }
+  .featured-right {
+    width: 100%;
+  }
+  .featured-right-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog:nth-last-child(-n + 3) {
+    display: none;
+  }
+}
 
 /* ------Small Devices------- */
+
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
     gap: 50px;
     text-align: center;
-    padding: 55px;
+    padding: 20px;
     padding-bottom: 0px;
   }
   .hero-content-left {
@@ -263,7 +318,7 @@ hr {
   .featured-left .btn {
     margin: 30px auto;
     background-color: rgba(255, 255, 255, 0);
-    border: 1px solid #000;
+    border: 1px solid #e8e8e8;
   }
 
   .featured-left .btn:last-child {
@@ -278,8 +333,14 @@ hr {
     justify-content: center;
     gap: 40px;
   }
-  footer {
-    display: none;
+
+  .footer-menu nav ul {
+    flex-direction: column;
+    /* gap: 20px; */
+  }
+  hr {
+    margin: 60px auto;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
   }
 }
 /* ------Medium Devices------- */
